@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>采购预算批量导入</title>
+		<link rel="stylesheet" type="text/css" href="../css/excel.css"/>
+	</head>
+	<body>
+		<font face="宋体" size="3">
+			<form id="myFormId" action="imp" method="post" enctype="multipart/form-data">
+			<p>请检查以下信息是否正确，如果不正确，请不要导入并立即联系政府采购系统管理员。</p>
+			<p>单位代码：&nbsp;<input type="text" id="unitCode" name="unitCode" value="#(user.code)" /></p>
+			<p>单位名称：&nbsp;<input type="text" id="unitName" name="unitName" value="#(user.name)" /></p>
+			<p>科室代码：&nbsp;<input type="text" id="deptCode" name="deptCode" value="#(user.departmentcode)" /></p>
+			<p>科室名称：&nbsp;<input type="text" id="deptName" name="deptName" value="#(user.departmentname)" /></p>
+			<p>当前年度：&nbsp;<input type="text" id="year" name="year" value="#(year)" />&nbsp;年已经导入<font color="#FF0000">&nbsp;#(count)&nbsp;</font>条。</p>
+			<p>请根据您的计算机上的Microsoft Ofiice Excel版本下载相应的导入模板。</p>
+			<p>如果您的Excel版本为2003及以下版本，请<a href="../moban/moban.xls">点此下载模板</a>。</p>
+			<p>如果您的Excel版本为2007及以上版本，请<a href="../moban/moban.xlsx">点此下载模板</a>。</p>
+			<table border="0px" cellspacing="0px" cellpadding="0px">
+					<tr height="20px">
+						<td align="center" width="100px">
+							<input type="file" id="filePath" name="filePath" required="required" />
+						</td>
+						<td align="center" width="100px">
+							<input type="submit" value="开始导入" />
+						</td>
+					</tr>
+			</form>
+			</table>
+		</font>
+	</body>
+</html>

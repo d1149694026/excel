@@ -1,0 +1,11 @@
+1、首先使用sql在数据库中创建相应的表。
+2、把项目导入到eclipse中，修改相应的数据库连接帐号密码。
+3、加入到tomcat8中启动。
+环境：
+JDK Version :1.8
+server version :apache/tomcat8
+Coding:UTF-8
+ 写的比较冲忙，不是很规范。
+可以导入xls和XLSx两种格式。
+这个项目的build 要使用JDK 如果使用JRE，编译的时候会有提示。
+

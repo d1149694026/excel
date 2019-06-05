@@ -1,0 +1,87 @@
+Table: MEMBER
+----------------+----------------+------+-----+---------+---------
+ Field          | Type           | Null | Key | Default | Remarks 
+----------------+----------------+------+-----+---------+---------
+ ID             | NUMBER(9)      | NO   | PRI |         |         
+ SOURCEID       | NUMBER(9)      | YES  |     |         |         
+ PARENTID       | NUMBER(9)      | YES  |     |         |         
+ RELATIONID     | NUMBER(9)      | YES  |     |         |         
+ CODE           | VARCHAR2(50)   | YES  |     |         |         
+ NAME           | VARCHAR2(200)  | YES  |     |         |         
+ MEMBERTYPE     | NUMBER(9)      | YES  |     |         |         
+ MEMBERGROUP    | NUMBER(9)      | YES  |     |         |         
+ MEMBERGRADE    | NUMBER(9)      | YES  |     |         |         
+ MEMBERLEVEL    | NUMBER(9)      | YES  |     |         |         
+ MEMBERSTYLE    | NUMBER(9)      | YES  |     |         |         
+ MEMBERSTATE    | NUMBER(9)      | YES  |     |         |         
+ DEPARTMENTCODE | VARCHAR2(50)   | YES  |     |         |         
+ DEPARTMENTNAME | VARCHAR2(100)  | YES  |     |         |         
+ FLOWCURRENT    | VARCHAR2(50)   | YES  |     |         |         
+ FLOWPROCESS    | VARCHAR2(500)  | YES  |     |         |         
+ FIRSTTIME      | DATE(7)        | YES  |     |         |         
+ FINALTIME      | DATE(7)        | YES  |     |         |         
+ PAPERTIME      | DATE(7)        | YES  |     |         |         
+ STAMPTIME      | DATE(7)        | YES  |     |         |         
+ CAPTION        | VARCHAR2(4000) | YES  |     |         |         
+ SUMMARY        | VARCHAR2(4000) | YES  |     |         |         
+ CONTENT        | VARCHAR2(4000) | YES  |     |         |         
+ DISTRICT       | VARCHAR2(50)   | YES  |     |         |         
+ ADDRESS        | VARCHAR2(200)  | YES  |     |         |         
+ POSTCODE       | VARCHAR2(50)   | YES  |     |         |         
+ CONTACT        | VARCHAR2(50)   | YES  |     |         |         
+ PHONE          | VARCHAR2(50)   | YES  |     |         |         
+ FAX            | VARCHAR2(50)   | YES  |     |         |         
+ MOBILE         | VARCHAR2(50)   | YES  |     |         |         
+ EMAIL          | VARCHAR2(50)   | YES  |     |         |         
+ URL            | VARCHAR2(200)  | YES  |     |         |         
+ ACCOUNTBANK    | VARCHAR2(100)  | YES  |     |         |         
+ ACCOUNTCODE    | VARCHAR2(100)  | YES  |     |         |         
+ ACCOUNTNAME    | VARCHAR2(100)  | YES  |     |         |         
+ ACCOUNTLEVEL   | NUMBER(9)      | YES  |     |         |         
+ ACCOUNTSCORE   | NUMBER(9)      | YES  |     |         |         
+ ACCOUNTPRICE   | NUMBER(16,6)   | YES  |     |         |         
+ USERNAME       | VARCHAR2(50)   | YES  |     |         |         
+ PASSWORD       | VARCHAR2(50)   | YES  |     |         |         
+ POWER          | VARCHAR2(4000) | YES  |     |         |         
+ NOTE           | VARCHAR2(4000) | YES  |     |         |         
+----------------+----------------+------+-----+---------+---------
+
+Table: PURCHASEBUDGET
+-------------+----------------+------+-----+----------+---------
+ Field       | Type           | Null | Key | Default  | Remarks 
+-------------+----------------+------+-----+----------+---------
+ ID          | NUMBER         | NO   | PRI |          |         
+ YEAR        | NUMBER         | YES  |     |          |         
+ UNITCODE    | VARCHAR2(10)   | YES  |     |          |         
+ UNITNAME    | VARCHAR2(100)  | YES  |     |          |         
+ DEPTCODE    | VARCHAR2(20)   | YES  |     |          |         
+ DEPTNAME    | VARCHAR2(100)  | YES  |     |          |         
+ SUBJECTCODE | VARCHAR2(20)   | YES  |     |          |         
+ SUBJECTNAME | VARCHAR2(100)  | YES  |     |          |         
+ ITEMSCODE   | VARCHAR2(20)   | YES  |     |          |         
+ ITEMSNAME   | VARCHAR2(100)  | YES  |     |          |         
+ METHODCODE  | VARCHAR2(20)   | YES  |     |          |         
+ METHODNAME  | VARCHAR2(100)  | YES  |     |          |         
+ DETAILDESC  | VARCHAR2(1000) | YES  |     |          |         
+ PRICE       | NUMBER         | YES  |     | 0
+       |         
+ QUANTITY    | NUMBER         | YES  |     | 0
+       |         
+ AMOUNT      | NUMBER         | YES  |     | 0
+       |         
+ BUDGETUSE   | VARCHAR2(1000) | YES  |     |          |         
+ APPLYEDSUM  | NUMBER         | YES  |     | 0
+       |         
+ REMAIN      | NUMBER         | YES  |     | 0
+       |         
+ INPUTUSER   | VARCHAR2(20)   | YES  |     | null
+    |         
+ INPUTTIME   | DATE(7)        | YES  |     | SYSDATE
+ |         
+ UPDATEUSER  | VARCHAR2(20)   | YES  |     | null
+    |         
+ UPDATETIME  | DATE(7)        | YES  |     | SYSDATE
+ |         
+ REMARK      | VARCHAR2(1000) | YES  |     |          |         
+-------------+----------------+------+-----+----------+---------
+
